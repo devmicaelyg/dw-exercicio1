@@ -13,6 +13,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 		title = "school",
 		version = "1.0",
 		description = "A Webservice about school"))
+@EnableJpaRepositories("com.ifes.lojinhadoifes.repository")
+@ComponentScan(basePackages = { "com.ifes.lojinhadoifes.*" })
 public class LojinhadoifesApplication {
 
 	public static void main(String[] args) {

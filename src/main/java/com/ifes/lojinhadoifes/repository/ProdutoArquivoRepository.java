@@ -1,7 +1,7 @@
 package com.ifes.lojinhadoifes.repository;
 
-import com.ifes.lojinhadoifes.application.IGenericApp;
-import com.ifes.lojinhadoifes.model.entity.Produto;
+import com.ifes.lojinhadoifes.application.generic.IGenericApp;
+import com.ifes.lojinhadoifes.model.Produto;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.CSVWriter;

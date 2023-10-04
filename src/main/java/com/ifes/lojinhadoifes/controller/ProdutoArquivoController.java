@@ -1,10 +1,9 @@
 package com.ifes.lojinhadoifes.controller;
 
-import com.ifes.lojinhadoifes.application.ApplicationAbstract;
-import com.ifes.lojinhadoifes.application.ProdutoArquivoApp;
+import com.ifes.lojinhadoifes.application.generic.ApplicationAbstract;
 import com.ifes.lojinhadoifes.exception.NotFoundException;
-import com.ifes.lojinhadoifes.model.entity.Produto;
-import com.ifes.lojinhadoifes.repository.IGenericRepository;
+import com.ifes.lojinhadoifes.model.Produto;
+import com.ifes.lojinhadoifes.repository.generic.IGenericRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +14,7 @@ import java.util.List;
 @RequestMapping("produtos/arquivo")
 public class ProdutoArquivoController {
     @Autowired
-    private ApplicationAbstract<Produto, IGenericRepository<Produto,Long>> applicationAbstract;
+    private ApplicationAbstract<Produto, IGenericRepository<Produto>> applicationAbstract;
 
     @GetMapping("/")
     public List<Produto> getAll() throws IOException {

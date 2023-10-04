@@ -1,4 +1,4 @@
-package com.ifes.lojinhadoifes.application;
+package com.ifes.lojinhadoifes.application.generic;
 
 import com.ifes.lojinhadoifes.exception.NotFoundException;
 

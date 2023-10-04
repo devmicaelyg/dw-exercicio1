@@ -1,4 +1,4 @@
-package com.ifes.lojinhadoifes.model.entity;
+package com.ifes.lojinhadoifes.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

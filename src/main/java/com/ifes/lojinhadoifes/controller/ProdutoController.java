@@ -2,7 +2,7 @@ package com.ifes.lojinhadoifes.controller;
 
 import com.ifes.lojinhadoifes.application.ProdutoApp;
 import com.ifes.lojinhadoifes.exception.NotFoundException;
-import com.ifes.lojinhadoifes.model.entity.Produto;
+import com.ifes.lojinhadoifes.model.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

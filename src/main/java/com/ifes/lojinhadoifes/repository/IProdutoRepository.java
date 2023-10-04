@@ -1,9 +1,7 @@
 package com.ifes.lojinhadoifes.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import com.ifes.lojinhadoifes.model.entity.Produto;
-import org.springframework.stereotype.Repository;
+import com.ifes.lojinhadoifes.model.Produto;
+import com.ifes.lojinhadoifes.repository.generic.IGenericRepository;
 
-@Repository
-public interface IProdutoRepository extends JpaRepository<Produto, Long>{
+public interface IProdutoRepository extends IGenericRepository<Produto> {
 }

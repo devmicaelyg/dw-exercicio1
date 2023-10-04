@@ -1,14 +1,15 @@
 package com.ifes.lojinhadoifes.application;
 
+import com.ifes.lojinhadoifes.application.generic.IGenericApp;
 import com.ifes.lojinhadoifes.exception.NotFoundException;
-import com.ifes.lojinhadoifes.model.entity.Produto;
+import com.ifes.lojinhadoifes.model.Produto;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class ProdutoApp implements IGenericApp<Produto>{
+public class ProdutoApp implements IGenericApp<Produto> {
     List<Produto> produtoList = new ArrayList<Produto>();
     private long lastId = 0;
 

@@ -1,13 +1,17 @@
-package com.ifes.lojinhadoifes.application;
+package com.ifes.lojinhadoifes.application.generic;
 
 import com.ifes.lojinhadoifes.exception.NotFoundException;
-import com.ifes.lojinhadoifes.repository.IGenericRepository;
+import com.ifes.lojinhadoifes.repository.generic.IGenericRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
 
-public class ApplicationAbstract <T,W extends IGenericRepository<T,Long>> implements IGenericApp<T>{
+@Component
+public class ApplicationAbstract <T, W extends IGenericRepository<T>> implements IGenericApp<T> {
 
     @Autowired
     W repository;
